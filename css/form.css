@@ -1,0 +1,240 @@
+
+/*******************************************
+				Defaults
+
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+	padding:0;
+	margin: 0;
+	
+}
+html,body{
+	font-family: 'Roboto', sans-serif;
+	background:#fff;
+}
+h1{
+	font-size: 3.6rem;
+	color:rgba(14,38,178,1);
+	padding:1.0rem 2rem;	
+	text-align:center;
+}
+h2{
+	font-size: 1.6rem;
+	color:rgba(178,63,22,1);
+	padding:1.0rem 2rem;	
+	text-align:center;
+}
+p{
+	font-size: 1.2rem;	
+	padding: 0.8rem 2rem;
+	color:rgba(178,63,22,1);
+	text-align: center;
+}
+
+/*******************************************
+				Layout
+*******************************************/
+	.wrapper{
+		max-width:1180px;
+		margin:0 auto;
+		border:1px solid rgba(14,38,178,1);
+		background:rgba(178,63,22,.1)
+	}
+	.masthead{
+		background-image: url(../img/ca.png), -webkit-linear-gradient(top, rgba(14,38,178,.4), rgba(14,38,178,1));
+		background-repeat:no-repeat;
+		background-position:center;
+		height: 304px;
+		color:rgba(14,38,178,1);
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+	.outline{
+		outline: solid 1px rgba(178,63,22,1);
+		max-width: 300px;
+		margin-left: 16px;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		margin: 0 auto;
+	}
+	.foot{
+		background: -webkit-linear-gradient(bottom, rgba(14,38,178,.4), rgba(14,38,178,1));;
+		padding-top: 10px;
+		clear:both;
+	}
+	.foot p {
+		text-align:left;
+		color: #fff;
+	}
+	.hotel1 {
+		background-repeat:no-repeat;
+		float: left;
+		height: 200px;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.hotel2 {
+		background-repeat:no-repeat;
+		float:left;
+		height: 200px;
+		width: 50%;
+	}
+
+@media screen and (min-width: 500px) {
+	.hotel1 {
+		width: 40%;
+		margin-left: 10%;
+	}
+	.hotel2 {
+		width: 40%;
+		margin-right: 10%;
+	}
+}
+
+@media screen and (min-width: 781px) {
+	.hotel1 {
+		width: 25%;
+		margin-left: 25%;
+	}
+	.hotel2 {
+		width: 25%;
+		margin-right: 25%;
+	}
+}		
+
+/*******************************************
+				Form Styles
+*******************************************/
+.formbox{
+	/*margin: 1rem 0 0 0;	*/
+}
+
+.col {
+	margin: 2rem 0 0 0;
+	max-width: 500px;
+}
+
+label{
+	display:block;
+	width: 8rem;
+	text-align:left;
+	margin: 0 0 0 2rem;
+	font-size: .8rem;
+	padding: 0.6rem 0 0.3rem 0; /* more space on the top than the bottom */
+	color: rgba(178,63,22,1);
+}
+
+.buttons{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=range], select, textarea{
+	display:block;
+	width: 150px;
+	text-align:left;	
+	font-size: .8rem;
+	padding: 0.4rem 0.4rem;
+	margin: 0 0 0 2rem;	
+	font-family: 'Roboto', sans-serif;
+}
+input[type=submit],
+input[type=reset]{
+	width: 130px;
+	height: 30px;
+	background: rgba(178,63,22,1);
+	color: #fff;	
+}
+
+#slider {
+	width: 200px;
+	margin-left: 2rem;
+	background:url(../img/money.png);
+	background-position: 10px;
+	background-repeat:no-repeat;
+	background-color: #fff;
+}
+#cost{
+	float: left;
+	width: 30px;
+	height: .9rem;
+	font-size: .8rem;
+}
+#cost p{
+	float: left;
+	width: 30px;
+	height: 1rem;
+	font-size: .8rem;
+	padding-top: 0;
+	color: #000;
+}
+
+/* 2 column format */
+@media screen and (min-width: 500px) {
+	formbox {clear: both;}
+	.outline {max-width: 500px;}
+	label {float: left;}
+	#slider{margin-left: 10rem; top:10px;}
+	.col {max-width:780px;}
+}
+
+/* 4 column format */
+@media screen and (min-width: 781px) {
+	.formbox {clear: both;}
+	.col {clear: both; max-width: 1180px;}
+	.outline {max-width: 800px;}
+	label {float: left;}
+	#departure {float:left; margin-left: 0;}
+	#departure_dt {float: left; margin-left: 0;}
+	#num_adults{float:left;margin-left: 0;}
+	#slider{margin-left: 10rem; top:10px; height:18px;}
+}
+
+/*******************************************
+				Image Styles
+				
+Icons made by famfamfam.com 
+famfamfam.com is the website of Mark James, 
+a web developer from Birmingham, UK.
+*******************************************/
+#departure, #destination { 
+	background:url(../img/world.png);
+	background-repeat:no-repeat;
+	background-position: 10px;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-right: 25px;
+	margin-bottom: 5px;
+	margin-right:-3px;
+	position:relative;
+}
+
+#departure_dt, #return_dt {
+	background:url(../img/calendar.png);
+	background-repeat:no-repeat;
+	background-position: 10px;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-right: 25px;
+	margin-bottom: 5px;
+	margin-right:-3px;
+	position:relative;
+}
+
+#num_adults {
+	background:url(../img/group.png);
+	background-repeat:no-repeat;
+	background-position: 10px;
+	background-color: #fff;
+	height: 40px;
+	width: 200px;
+	text-indent:25px;
+
+}
+

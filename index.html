@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Travel Form</title>
+	<link rel="stylesheet" href="css/form.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+</head>
+<body>
+	<div class="wrapper">
+		<header class="masthead">
+			<!--<h1>Crash Airlines</h1>-->
+		</header>
+		<section class="main">
+			<h2>You fill our planes, we smash them</h2>
+			<p>Please fill out the form below.</p>
+			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+				<div class="outline">
+                    <div class="formBox">
+                        <label for="departure">Departure City:</label>
+                        <input type="text" name="departure" id="departure" required autocomplete="on" placeholder="departure city" />
+                    </div>
+                    <div class="formBox">
+                        <label for="destination">Destination City:</label>
+                        <input type="text" name="destination" id="destination" required autocomplete="on" placeholder="destination city" />
+                    </div>
+                    
+                    <div class="formBox">
+                        <label for="departure_dt">Date of Departure:</label>
+                        <input type="date" name="departure_dt" id="departure_dt" required autocomplete="on" placeholder="" />
+                    </div>
+                    <div class="formBox">
+                        <label for="return_dt">Date of Return:</label>
+                        <input type="date" name="return_dt" id="return_dt" required autocomplete="on" placeholder="" />
+                    </div>
+                    
+                    <div class="formbox">
+                        <label for="num_adults">Number of Adults:</label> 
+                        <select name="num_adults" id="num_adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="price" title="Max. price per person">Max. Price:</label>
+                        <div id="slider"><div id="cost"><p></p></div></div>                                              
+                    </div>
+				</div>
+				<div class="col buttons">
+					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+				</div>
+			</form>
+		</section>
+        <section class="hotels">
+        	<p>Please visit our lovely hotels
+            while visiting in the Ottawa area.</p>
+            <div class="hotel1">
+            	<img src="img/hotel1.png"/>
+            </div>
+            <div class="hotel2">
+            	<img src="img/hotel2.png"/>
+            </div>
+        </section>
+		<footer class="foot">
+			<p>&copy; 2014 Paul Harvey Inc.</p>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
